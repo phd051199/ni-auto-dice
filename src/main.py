@@ -120,7 +120,7 @@ def process_source_image(source_path):
         total_objects = sum(process_template(path, gray_image, image) for path in template_paths)
         
         print(Fore.GREEN + f"Total objects found in {source_path}: {total_objects}" + Style.RESET_ALL)
-        perform_click_action(total_objects, pos1=(754, 625), pos2=(914, 622), pos3=(825, 698))
+        perform_click_action(total_objects, pos1=(1273, 924), pos2=(1559, 920), pos3=(1416, 1018))
         
         output_dir = "output"
         os.makedirs(output_dir, exist_ok=True)
@@ -186,5 +186,5 @@ def main():
 if __name__ == "__main__":
     while True:
         time.sleep(3)
-        capture_and_crop(1220, 1080, 130, 160)
+        capture_and_crop(990, 780, 150, 150)
         main()
